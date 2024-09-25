@@ -1,101 +1,79 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Responsive Navbar</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link rel="stylesheet" href="styles/index.css" />
+<html>
+<head>
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mark Ivan</title>
+  <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+  <div id="particles-js"></div>
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-  </head>
-  <body style="height: 1000px" class="bg-black overflow-x-hidden">
-    <div class="navbar">
-      <nav class="fixed lg:p-1 w-screen pb-10">
-        <div class="flex items-center justify-between p-2 w-full bg-white ">
+  <script src="skylark.js"></script>
 
+  <div class="loading-container">
+    <img class="loading-gif" src="gifs/dia.gif" alt="Loading...">
+    <p class="loading-message">Loading...</p>
 
-          <div class="flex items-center">
-            <!-- <img class="inline-block z-10 lg:h-8 lg:ml-1 h-8 items-center" src="tawa.png"> -->
+    <div class="loading-bar-container">
+        <div class="loading-bar"></div>
+    </div>
+</div>
 
-            <!-- <img
-              class="h-8 z-20 ml-1 hidden sm:hidden md:hidden lg:inline-block lg:h-8 lg:ml-1"
-              src="tawa.png"
-              alt="Light Mode Logo"
-            /> -->
+<div class="satoshi" style="display: none;">
+    <img src="gifs/faze.gif" alt="Welcome" style="width: 100%;height: 180px;">
+</div>
 
-            <img
-              class="inline-block ml-2 z-10 lg:h-8 h-8 mt-1 dark:inline-block"
-              src="awat.png"
-              alt="Dark Mode Logo"
-            />
-          </div>
-          <div
-            class="hamburger space-y-1 flex flex-col lg:hidden p-4 ml-auto"
-            onclick="toggleMenu()"
-          >
-            <span class="w-6 h-0.5 bg-black"></span>
-            <span class="w-6 h-0.5 bg-black"></span>
-          </div>
+    <p class="typing-effect"></p>
 
-          <ul
-            id="menu"
-            class="menu z-100 hidden space-x-4 text-white lg:text-black lg:flex lg:flex-row lg:justify-end fixed top-0 right-0 lg:h-auto h-full lg:bg-zinc-100 bg-black lg:w-full w-4/5 pr-3"
-          >
-            <li class="text-right p-4 lg:hidden">
-              <button class="text-white text-2xl" onclick="toggleMenu()">
-                &times;
-              </button>
-            </li>
-            <li>
-              <a class="block p-4 hover:text-green-500" href="#home">Home</a>
-            </li>
-            <li>
-              <a class="block p-4 hover:text-green-500" href="#about">About</a>
-            </li>
-            <li>
-              <a class="block p-4 hover:text-green-500" href="#contact"
-                >Contact</a
-              >
-            </li>
-          </ul>
-        </div>
-      </nav>
+    
+    <div class="video-button" id="video-button" onclick="playVideo()">Play recording</div>
+    
+
+    <div id="video-container" class="video-container">
+        <div id="player"></div>
     </div>
 
-    <!-- In your HTML -->
-    <!-- <div class="cover">
-  <img src="images/ggg.jpg" alt="">
-</div> -->
-<div
-  class="name-container pt-02 lg:pl-20 pl-20 relative inline-block w-full h-56 bg-[url('images/wallp.jpg')] bg-cover bg-center"
->
-  <p class="text-1xl font-medium text-indigo-500 pt-10">Frontend engineer</p>
-  <p class="lg:text-7xl font-mono text-5xl text-white">Mark Ivan</p>
-  <button class="mt-4 bg-indigo-500 text-white lg:px-4 px-2 py-2 rounded">View Skills</button>
-</div>
+    <img src='images/wrath.gif' id='selector'/>
+    <img class="circular--square" src="images/mark.jpg" />
 
-<div class="about-container text-center">
-<p class="mt-8 text-xl">About</p>
-<p class="description mt-5 text-justify ml-5 mr-5 space-2">
-  I’m Mark Ivan Sumalinog, a web developer dedicated to crafting sleek and functional websites. My focus is on creating digital experiences that are both visually appealing and highly functional. With a passion for clean design and responsive layouts, I strive to make every project stand out.
-</p>
-<p class="description mt-5 text-justify ml-5 mr-5 space-2">
-  Whether you're looking to build something from scratch or improve an existing site, I’m here to help. Let’s collaborate and create something amazing together!
-</p>
+    <br>
+    
+        <div class="stack" style="--stacks: 3;">
+          <span style="--index: 0;">CODENAME STORM</span>
+          <span style="--index: 1;">CODENAME STORM</span>
+          <span style="--index: 2;">CODENAME STORM</span>
+        </div>
+        
+        <div class="slide-right">
+            <h2> AN ASPIRING <span style="color: slateblue;"> FULL STACK DEVELOPER </span></h2>
+          </div>
+    
+          <div class="about"> <h3>A Second Year College Student Studying Bachelor of Science in Information Systems at Cebu Technological University.</h3> </div>
+    
+          <div class="epic1"> 
+            <video width="100%" height="350" autoplay="autoplay" controls muted loop> 
+             <source src="videos/markcascade.mp4" type="video/mp4">
+             <source src="movie.ogg" type="video/ogg"> </video>
+    
+             <div class="project"><h2>Projects Made in <span style="color: slateblue;">Mobile </span></h2></div>
+             <div class="epic2"> 
+                <video width="100%" height="350" autoplay="autoplay" controls muted loop> 
+                 <source src="videos/made.mp4" type="video/mp4">
+                 <source src="movie.ogg" type="video/ogg"> </video>
+                 
+                <div class="parallax"></div>
 
-</div>
+                <!-- Add the image and message here -->
+      
 
-    <script>
-      function toggleMenu() {
-        const menu = document.getElementById("menu");
-        menu.classList.toggle("hidden");
-      }
-    </script>
-  </body>
+            <!--
+            <div class="works2"><h3> <br> <span style="color: Gold;">"</span> Veni Vidi Vici <span style="color: Gold;">"</span>
+            <pre><span style="color: red;">- Anonymous </span></pre> </h3></div>
+            -->
+            
+            <div class="scroll-space"></div>
+        </div>
+    </body>
 </html>
